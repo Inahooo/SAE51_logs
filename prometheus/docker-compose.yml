@@ -6,7 +6,7 @@ services:
    - prom_data:/prometheus
   container_name: prometheus
   ports:
-   - 9090:9090
+   - 127.0.0.1:9090:9090
   restart: unless-stopped
 volumes:
  prom_data:

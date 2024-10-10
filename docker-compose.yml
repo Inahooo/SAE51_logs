@@ -1,0 +1,36 @@
+services:
+ grafana:
+  image: grafana/grafana
+  volumes:
+   - ./grafana/datasources:/etc/grafana/provisioning
+  container_name: grafana
+  networks:
+   - localnet
+  restart: unless-stopped
+  ports:
+   - 127.0.0.1:3000:3000
+
+
+ node-exporter:
+  image: prom/node-exporter
+  container_name: node-exporter
+  networks:
+   - localnet
+  ports:
+   - 127.0.0.1:9100:9100
+
+ prometheus:
+  image: prom/prometheus:latest
+  volumes:
+   - ./prometheus/prometheus:/etc/prometheus
+  container_name: prometheus
+  networks:
+   - localnet
+  ports:
+   - 127.0.0.1:9090:9090
+  restart: unless-stopped
+
+
+networks:
+ localnet:
+  driver: bridge

@@ -15,4 +15,15 @@ des possibilités, via une doc associée, rédigée en Markdown.
 
 ## Nos échecs
 
-Dans un premier temps, nous avons tenté de crée notre docker à partir d'un script bash. Mais nous étions limité 
+Dans un premier temps, nous avons tenté de récupérer les logs d'une page web réalisé par nos soins mais nous avons réalisé que Node Exporter collete initialment les métriques de la machine.
+Dans une second temps, nous avons tenté de crée notre docker à partir d'un script bash. Mais nous n'avons pas trouver les comment mettre en place les solutions attendues.
+
+
+## Solutions 
+
+![](./src/Diagramme_Logs.png "Diagramme de l'architecture de notre projet")
+
+## Mise en place
+
+
+

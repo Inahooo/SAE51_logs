@@ -17,7 +17,7 @@ des possibilités, via une doc associée, rédigée en Markdown.
 
 - Dans un premier temps, nous avons tenté de récupérer les logs d'une page web réalisé par nos soins mais nous avons réalisé que Node Exporter collete initialment les métriques de la machine.
 - Dans une second temps, nous avons tenté de crée notre docker à partir d'un script bash. Mais nous n'avons pas trouver les comment mettre en place les solutions attendues.
-- Pour finir, Lors de la configuration du graphana nous nous sommes trompé de source en indiquant **node-exporter:9100 ** au lieu de **localhost:9100**
+- Pour finir, Lors de la configuration du graphana nous nous sommes trompé de source en indiquant **node-exporter:9100** au lieu de **localhost:9100**
 
 ## Solutions 
 

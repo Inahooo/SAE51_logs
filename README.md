@@ -43,6 +43,8 @@ Pour lancer la totalité des conteneurs il faut faire cette commande :
 
 L'argument -d sert à se détacher des conteneurs et donc garder la main sur son terminal.
 
+Et pour arrêter et supprimer les conteneurs il y a le fichier stop.sh.
+
 Une fois cela fait il faut se rendre sur cette adresse :
 > localhost:3000
 

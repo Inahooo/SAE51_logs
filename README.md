@@ -79,3 +79,9 @@ Une fois cela fait on arrive sur la page avec nos metrics :
 
 Il reste seulement un dernier changment c'est changer l'echelle de temps pour voir l'évolution sur les 5 dernières minutes :
 ![Image du dashboard fini](./src/enddashboard.png "Dashboard après changement")
+
+
+## Essai
+
+Nous avons essayé de mettre en place l'automatisation de l'intégration de la data source dans Grafana via la doc, l'essai se trouve dans le fichier default.yml dans le dossier ./grafana/datasources/
+Nous avons aussi essayé de trouver comment faire en sorte de ne pas avoir à se log quand on lance Grafana mais nous n'avons pas trouvé si c'était possible.

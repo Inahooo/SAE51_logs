@@ -1,7 +1,7 @@
 
 # Les solutions libres existantes de collecte, centralisation et présentation de logs 
 
-## 1. ELK Stack
+## 1. ELK Stack (Elasticsearch, Logstash, Kibana)
 
 ### Points clés
 - **Flexibilité** : Grande flexibilité grâce à la configuration de Logstash et aux capacités de recherche d'Elasticsearch.

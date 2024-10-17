@@ -39,6 +39,19 @@ Pour la mise en place, avec le fichier ZIP, il faut unzip le fichier ce qui va d
 
 Une fois que nous avons bien unzip le fichier il faut se placer à la racine.
 Pour lancer la totalité des conteneurs il faut faire cette commande :
-''' docker compose up -d '''
+> docker compose up -d
 
 L'argument -d sert à se détacher des conteneurs et donc garder la main sur son terminal.
+
+Une fois cela fait il faut se rendre sur cette adresse :
+> localhost:3000
+
+Le port 3000 étant celui de grafana.
+
+Une fois sur la page il faut se connecter les identifiants sont ceux de base donc : 
+Dans "email or username" : admin
+Dans "Password" : admin
+Puis skip le changement de mot de passe.
+
+Une fois bien connecté ouvrir le menu sur le côté aller dans connections puis add new connection :
+![Ajout nouvelle source](./src/newsource.png "Ajout d'une nouvelle source de donnée")

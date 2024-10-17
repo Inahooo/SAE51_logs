@@ -62,3 +62,7 @@
 ### Inconvénients
 - Moins mature que d'autres solutions.
 - Moins de fonctionnalités avancées.
+
+# Solution choisie
+
+Node Exporter a été utilisé pour récupérer les métriques de la machine. Prometheus couplé à Grafana forme une combinaison puissante pour créer une interface d'affichage de logs, bien qu'ils soient principalement conçus pour la collecte, la gestion et la visualisation de métriques de performance en temps réel. Ces outils peuvent être adaptés pour afficher des logs via des métriques dérivées. Prometheus collecte les métriques, et Grafana, avec son interface flexible et hautement personnalisable, permet d'intégrer des tableaux de bord combinant graphiques de métriques et panneaux de logs, facilitant ainsi le suivi des performances et le dépannage. De plus, Grafana permet de configurer des alertes basées sur des métriques spécifiques dérivées des logs et prend en charge diverses sources de données comme Elasticsearch, offrant une gestion unifiée des métriques et des logs. Enfin, Prometheus et Grafana bénéficient d'une communauté active, ce qui facilite la personnalisation et l'extension de la solution. 

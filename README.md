@@ -35,3 +35,10 @@ Nous avons finallement choisis de d'utilisé Node Exporter qui récupere les mé
 ## Mise en place
 
 Pour la mise en place, avec le fichier ZIP, il faut unzip le fichier ce qui va donner une arborescence comme celle-ci :
+![Arborescence attendu](./src/tree.png "Arborescence à avoir avec le fichier ZIP")
+
+Une fois que nous avons bien unzip le fichier il faut se placer à la racine.
+Pour lancer la totalité des conteneurs il faut faire cette commande :
+''' docker compose up -d '''
+
+L'argument -d sert à se détacher des conteneurs et donc garder la main sur son terminal.

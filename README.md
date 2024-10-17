@@ -34,3 +34,4 @@ Nous avons finallement choisis de d'utilisé Node Exporter qui récupere les mé
 
 ## Mise en place
 
+Pour la mise en place, avec le fichier ZIP, il faut unzip le fichier ce qui va donner une arborescence comme celle-ci :

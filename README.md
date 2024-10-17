@@ -17,7 +17,7 @@ des possibilités, via une doc associée, rédigée en Markdown.
 
 - Dans un premier temps, nous avons tenté de récupérer les logs d'une page web réalisé par nos soins mais nous avons réalisé que Node Exporter collete initialment les métriques de la machine.
 - Dans une second temps, nous avons tenté de crée notre docker à partir d'un script bash. Mais nous n'avons pas trouver les comment mettre en place les solutions attendues.
-- Pour finir, Lors de la configuration du graphana nous nous sommes trompé de source en indiquant **node-exporter:9100** au lieu de **localhost:9100**
+- Pour finir, lors de la configuration du graphana nous nous sommes trompé de source en indiquant **node-exporter:9100** au lieu de **localhost:9100**
 
 ## Solutions 
 
@@ -55,3 +55,25 @@ Puis skip le changement de mot de passe.
 
 Une fois bien connecté ouvrir le menu sur le côté aller dans connections puis add new connection :
 ![Ajout nouvelle source](./src/newsource.png "Ajout d'une nouvelle source de donnée")
+
+Puis chercher "Prometheus" et selectionner :
+![Ajout source prometheus](./src/prometheus.png "Source prometheus")
+
+Une fois sur la page cliquer sur "Add new data source"
+Et après il suffit de renseigner dans le champ "Connection" :
+> http://prometheus:9090
+Puis aller tout en bas de la page et faire "save & test"
+
+Une fois cela fait, il faut ouvrir le menu sur le côté et aller dans le menu "Dashboard" :
+![Aller dans le menu dashboard](./src/dashboard.png "Aller dans le dashboard)
+
+Dans ce menu cliquer sur "create dashboard" puis "import dashboard" :
+![Import le Dashboard](./src/import.png "Import du dashboard")
+
+Cliquer sur "load" puis il faut selectionner notre source prometheus et faire import.
+
+Une fois cela fait on arrive sur la page avec nos metrics :
+![Image du dashboard](./src/dashboardd.png "Dashboard avant changement")
+
+Il reste seulement un dernier changment c'est changer l'echelle de temps pour voir l'évolution sur les 5 dernières minutes :
+![Image du dashboard fini](./src/enddashboard.png "Dashboard après changement")
